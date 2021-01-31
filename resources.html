@@ -1,0 +1,108 @@
+
+    <!DOCTYPE html >
+    <html lang="en" class="has-scroll-init has-scroll-smooth has-scroll-dragging">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>REFUJOURNEYS</title>
+    <meta name="application-name" content="Refujourney">
+        <!-- Bootstrap UI Framework: Creating a uniform UI style with these preset styling options-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+          crossorigin="anonymous"
+        ></script>
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+    
+        <!-- GSAP JavaScript Animation library CDN: Making the movement in some of the objects dynamic-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    
+        
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="./css/main.css" />
+      </head>
+      <body>
+         
+        <!-- STICKY NAV: the navigation menu will always stay at the top of the page -->
+        <nav class="navbar sticky-top navbar-light bg-light" data-scroll-sticky>
+          <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">Refujourney</span>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link" href="#intro">Introduction</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#data">Data Visualization</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resources">Directory</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- END STICKY NAV -->
+     <main>
+    
+    <!-- RESOURCES -->
+
+    <section id="resources">
+       
+      
+    </section>
+
+    <!-- END RESOURCES -->
+
+</main>
+<!-- CREDITS -->
+<footer>
+  <ul>
+    <li>
+      <i class="bi bi-github"></i><a href="">View GitHub Repository</a>
+    </li>
+  </ul>
+</footer>
+<div class="c-scrollbar"></div>
+<div class="c-scrollbar_thumb"></div>
+<script>
+gsap.fromTo('.custom-h1', {opacity:0, yPercent:50, duration:25, ease:"circ.out"}, {opacity:1, yPercent: -1})
+
+let tl
+
+</script>
+
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+gsap.defaults({ease:"none"});
+
+ScrollTrigger.create({
+start: 'top -80',
+end: 99999,
+toggleClass: {className: 'navbar--scrolled', targets: '.navbar'}
+});
+
+</script>
+
+</body>
+</html>

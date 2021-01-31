@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Refujourney</title>
-
+    <title>REFUJOURNEYS</title>
+<meta name="application-name" content="Refujourney">
     <!-- Bootstrap UI Framework: Creating a uniform UI style with these preset styling options-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
@@ -25,8 +25,7 @@
     <!-- GSAP JavaScript Animation library CDN: Making the movement in some of the objects dynamic-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 
-    <!-- LOCOMOTIVE -->
-    <script src="index.js" crossorigin="anonymous" type="text/JavaScript"></script>
+    
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -53,10 +52,10 @@
             <a class="nav-link" href="#intro">Introduction</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#data">Data Visualization</a>
+            <a class="nav-link" href="#">Data Visualization</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#resources">Directory</a>
+            <a class="nav-link" href="./resources.html">Resources</a>
           </li>
         </ul>
       </div>
@@ -64,21 +63,24 @@
     <!-- END STICKY NAV -->
  <main>
     <!-- INTRO SECTION -->
-    <div id="intro" data-scroll-container data-scroll-direction="horizontal" class="hs">
-    <section data-scroll-section data-scroll-direction="horizontal" class="panel1">
-    <h1 class="custom-h2">Visualizing forced migration or displacement on a global scale.</h1>
-    <h2 data-scroll-class="scroll-class" class="scroll-h2">Information</h2>
+    <div id="intro" class="hs">
+    <section data-scroll-section class="panel1">
+    <h1 class="custom-h1">Visualizing forced migration or displacement on a global scale.</h1>
+    <h2 class="scroll-h2">Information</h2>
         <p>Pancakes and coffee.</p>
         <p>Sugar</p>
     </section>
-    <section data-scroll-section data-scroll-speed="2" data-scroll-direction="horizontal" class="panel2">
-        <h2 data-scroll-class="scroll-class" class="scroll-h2">Information</h2>
-        <p>Pancakes and coffee.</p> </section>
-    <section data-scroll-section data-scroll-speed="2" data-scroll-direction="horizontal" class="panel3">
-            <h2 data-scroll-class="scroll-class" class="scroll-h2">Information</h2>
-            <p>Pancakes and coffee.</p>
-        </section>
-   
+    <section class="panel2">
+<h2  class="scroll-h2">Information</h2>
+        <p>Pancakes and coffee.</p>
+        <p>Sugar</p>
+
+    </section>
+    <section class="panel2 >
+    <h2 scroll-h2">Information</h2>
+        <p>Pancakes and coffee.</p>
+        <p>Sugar</p>
+    </section>
     </div>
 
     <!-- END INTRO SECTION -->
@@ -88,99 +90,19 @@
 
     <!-- END DATA MODEL -->
 
-
-    <!-- RESOURCES -->
-<div class="container-fluid" data-scroll-container>
-    <section id="resources">
-    <div class="row">
-        <div class="filter position-sticky" >
-            <div class="accordion">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      By Region
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <div class="list-group-flush">
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Cras justo odio
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Dapibus ac facilisis in
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Morbi leo risus
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Porta ac consectetur ac
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Vestibulum at eros
-                            </label>
-                          </div>  </div>
-                  </div>
-                </div>
-            </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Resource Type
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <div class="list-group-flush">
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Cras justo odio
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Dapibus ac facilisis in
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Morbi leo risus
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Porta ac consectetur ac
-                            </label>
-                            <label class="list-group-item">
-                              <input class="form-check-input me-1" type="checkbox" value="">
-                              Vestibulum at eros
-                            </label>
-                          </div>  </div>
-        
-        
-    </div><div id="content">
-            <h2>Toasters</h2>
-            <p>晚飯</p>
-        </div>
-    </section>
-</div>
-    <!-- END RESOURCES -->
-
 </main>
-    <!-- CREDITS 
+    <!-- CREDITS -->
     <footer>
       <ul>
         <li>
           <i class="bi bi-github"></i><a href="">View GitHub Repository</a>
         </li>
       </ul>
-    </footer>-->
+    </footer>
     <div class="c-scrollbar"></div>
     <div class="c-scrollbar_thumb"></div>
 <script>
-    gsap.fromTo('.custom-h2', {opacity:0, yPercent:50, duration:25, ease:"circ.out"}, {opacity:1, yPercent: -1})
+    gsap.fromTo('.custom-h1', {opacity:0, yPercent:50, duration:25, ease:"circ.out"}, {opacity:1, yPercent: -1})
 
     let tl
 
@@ -196,6 +118,7 @@ ScrollTrigger.create({
   end: 99999,
   toggleClass: {className: 'navbar--scrolled', targets: '.navbar'}
 });
+
 
 //ScrollTrigger.create({
   //trigger: "#panel1",

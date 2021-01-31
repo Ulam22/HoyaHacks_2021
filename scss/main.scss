@@ -24,6 +24,26 @@ i {
     vertical-align: baseline;
 }
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #668fc2;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: $accent;
+  }
+
 /* BUTTONS AND LINKS */
 a,
 a:visited {
@@ -50,6 +70,9 @@ a:focus {
       height: 40px;
     }
 }
+.navbar-brand {
+    text-transform: uppercase;
+}
 li.nav-item {
     list-style: none;
 }
@@ -60,9 +83,10 @@ a.nav-link {
 
 /* INTRO */
 .hs {
-    min-height: 100vh;
-
+    //height: 100vh;
+overflow: hidden;
     section {
+        
         height: 100vh;
         padding: 10em;
         &:nth-child(odd) {
@@ -72,39 +96,17 @@ a.nav-link {
             background: $accent;
             color: $white;
         }
+        
     }
 }
 
-/* RESOURCES */
+/* RESOURCES 
 
 #resources {
-    padding: 2em;
-    min-height: 100vh;
-  .filter {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1030 !important;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-  }
-  content {
-    margin-left: 250px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
 
-  }
 }
-.accordion {
-    &-body {
-        padding:0 !important;
-    }
-    .list-group-item{
-        width:100%;
-    }
-}
+ */
+
 
 /* FOOTER */
 footer {

@@ -23,6 +23,26 @@ i {
   vertical-align: baseline;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #668fc2;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #256ec5;
+}
+
 /* BUTTONS AND LINKS */
 a,
 a:visited {
@@ -55,6 +75,10 @@ a:focus {
   height: 40px;
 }
 
+.navbar-brand {
+  text-transform: uppercase;
+}
+
 li.nav-item {
   list-style: none;
 }
@@ -67,7 +91,7 @@ a.nav-link {
 
 /* INTRO */
 .hs {
-  min-height: 100vh;
+  overflow: hidden;
 }
 
 .hs section {
@@ -84,39 +108,12 @@ a.nav-link {
   color: #fffffe;
 }
 
-/* RESOURCES */
+/* RESOURCES 
+
 #resources {
-  padding: 2em;
-  min-height: 100vh;
-}
 
-#resources .filter {
-  height: 100%;
-  width: 250px;
-  position: fixed;
-  z-index: 1030 !important;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
 }
-
-#resources content {
-  margin-left: 250px;
-  /* Same as the width of the sidenav */
-  font-size: 28px;
-  /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-.accordion-body {
-  padding: 0 !important;
-}
-
-.accordion .list-group-item {
-  width: 100%;
-}
-
+ */
 /* FOOTER */
 footer {
   bottom: 0;
